@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: EBI02201
+Version: 0.0.0
+Summary: Machine Learning EMBL-EBI
+Author: DNarganes
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: loguru
+
+# EBI02201
+
+
+TODO: Insert description of the purpose of the repo here. Link to project brief if available.
+
+# Project Organisation
+
+------------
+
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries. Note that the 
+    │                          Centaur Biologist team prefers models serialised by onnx.
+    │
+    ├── analysis           <- Jupyter notebooks and python analysis files. Naming convention is a number (for ordering),
+    │                         and a short `-` delimited description, e.g.  `01-initial-data-exploration`. It is
+    │                         also possible to group analyses in sub-folders, which should then also be numbered.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures        <- Generated key graphics and figures to be used in reporting
+    │
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    │
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    └── src                <- Source code for use in this project.
+        ├── __init__.py    <- Makes src a Python module         
+        └── ebi02201 <- contains files with importable code
+
+ 
+--------
+
+
+## Getting started
+
+### Prerequisites
+
+- [conda][conda]:
+  Used for package management and virtual environments.
+  Recommended distribution is [miniforge][miniforge].
+  Note that the [Miniconda][miniconda] and [Anaconda][anaconda] distributions
+  may require a licence for [commercial activities][anaconda-tos].
+
+  - Use `conda init` to ensure that conda is correctly installed and configured.
+  - Ensure that `conda activate` works even with no conda environment activated.
+
+### Set-up
+At a high level, these are the steps needed to get things running:
+
+1. Ensure you have conda installed.
+2. [Create a virtual environment](##environment)
+5. To inspect and run the notebooks, type `jupyter lab` in the command line. Assuming this was done at the root directory of the repository, navigate to the notebooks folder in the browser to find the notebooks.
+
+Additional optional set-up steps:
+
+- VSCode:
+
+    - Configure Python environment location
+    - Enable flake8 code checking
+    - Enable pylint code checking
+
+
+### Environment
+
+To create the virtual enivronment run ``conda env create -f environment.yml --name <virtual environment name>`` in the commandline. If an environment lock file has been added to the repository, this can be used to reproduce the exact environment with which this code was developed, by running `conda env create -f environment.lock.yml`
+
+Activate the environment with `conda activate <environment name>`.
+
+## Data
+
+TODO: Explain how to get the data to reproduce the analysis. E.g. pull raw files from s3, pull interim and results file from dvc (if applicable)..
+
+
+## Analysis
+
+The following key notebooks/scripts have been put together in the analysis folder:
+
+TODO: Complete the table below with the key analysis notebooks/python scripts.
+
+| Name | Description |
+| ----------- | ----------- |
+| [00-demo-import-from-source](analysis/00-demo-import-from-source.ipynb) |  Notebook that shows how to import a function from the installable source package.| 
+
+--------
+
+[conda]: https://conda.io/
+[miniforge]: https://github.com/conda-forge/miniforge

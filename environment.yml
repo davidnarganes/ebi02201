@@ -1,0 +1,25 @@
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+- python=3.10
+- pip>=21.0
+
+# Data science support
+- jupyterlab
+- numpy>=1.22.4
+- pandas>=1.4.2
+
+# Code quality
+- jupyterlab_code_formatter # for automatic code formatting in jupyter notebooks
+- black  # for automatic code formatting
+- isort >=5.0.2  # for import standardization
+- flake8 >=3.6.0  # for static analysis
+- pylint~=2.13 # Linter to flag code issues or stylistic errors
+
+# Tests
+- pytest
+
+- pip:
+  - -e .  # project code

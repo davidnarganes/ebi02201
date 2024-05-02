@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=45"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+target-version = "py310"
+# Keep this in sync with ISORT_SOURCE_PATHS variable in noxfile.py.
+include = '/src/.*\.pyi?$|/tests/.*\.pyi?$|/docs/.*\.pyi?$|noxfile.py'
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+cache_dir = ".cache/pytest_cache"
+minversion = "6.0"
+addopts = "-rv --doctest-modules --color=yes"
+testpaths = ['tests']
+log_cli = true
+log_cli_level = "WARNING"
+log_cli_format = "%(levelname)s:%(name)s: %(message)s"
+
+

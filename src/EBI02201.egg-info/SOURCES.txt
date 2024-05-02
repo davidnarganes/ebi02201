@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/EBI02201.egg-info/PKG-INFO
+src/EBI02201.egg-info/SOURCES.txt
+src/EBI02201.egg-info/dependency_links.txt
+src/EBI02201.egg-info/requires.txt
+src/EBI02201.egg-info/top_level.txt
+src/ebi02201/__init__.py
+src/ebi02201/utils.py
+tests/test_example.py
